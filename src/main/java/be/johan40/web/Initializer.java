@@ -37,9 +37,8 @@ public class Initializer extends
 	}
 
 	@Override
-	protected String[] getServletMappings() {
-		// TODO Auto-generated method stub
-		return null;
+	protected String[] getServletMappings() {		
+		return new String[] { "/" };
 	}
 
 	@Override
