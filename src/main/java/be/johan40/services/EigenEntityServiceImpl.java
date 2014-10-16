@@ -10,12 +10,12 @@ import be.johan40.entities.EigenEntity;
 @Service
 @Transactional
 public class EigenEntityServiceImpl implements EigenEntityService {
-	private final EigenEntityDAO entityDAO;
+	private final EigenEntityDAO eigenEntityDAO;
 	@Autowired	
-	EigenEntityServiceImpl(EigenEntityDAO entityDAO) {
+	EigenEntityServiceImpl(EigenEntityDAO eigenEntityDAO) {
 	// Spring injecteert de parameter filiaalDAO
 	// met de bean die de interface FiliaalDAO implementeert
-	this.entityDAO = entityDAO;
+	this.eigenEntityDAO = eigenEntityDAO;
 	}
 	
 	@Override
